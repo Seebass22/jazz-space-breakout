@@ -6,11 +6,13 @@ using UnityEngine.Events;
 
 public class Brick : MonoBehaviour
 {
+    AudioSource source;
     Renderer rend;
     public UnityEvent<Brick> brickHit;
     void Start()
     {
         rend = GetComponent<Renderer>();
+        source = GetComponent<AudioSource>();
     }
 
     public void markBrick()
@@ -22,6 +24,7 @@ public class Brick : MonoBehaviour
     {
         if (other.collider.GetComponent<Ball>())
         {
+            source.Play();
             BrickQueue.onBrickHit?.Invoke(this);
         }
     }
