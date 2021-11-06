@@ -245,13 +245,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 540787128af8d7949bf606d91ff22e3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  queueLocked: 0
   lick1:
   - {fileID: 8300000, guid: 1cbde8e90af2e1d4da88fa9d129e00f9, type: 3}
   - {fileID: 8300000, guid: f4622d06386c68f4889dc192e1e1abe8, type: 3}
   - {fileID: 8300000, guid: e3f02909fdc1fbb49b68e032748cab62, type: 3}
   - {fileID: 8300000, guid: 72d2ba21f424d844c9c54a0f600e51ae, type: 3}
-  lick2: []
+  lick2:
+  - {fileID: 8300000, guid: 8f7175e76a0f5424f9b2330f05a538f5, type: 3}
+  - {fileID: 8300000, guid: 5c704cbac4ddc9e4aa8171e83f3059d3, type: 3}
+  - {fileID: 8300000, guid: 1ccb172361bd06546961c510ec8d3938, type: 3}
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0

@@ -44,9 +44,9 @@ public class BrickQueue : MonoBehaviour
             queue.Add(brick);
             brick.markBrick();
         }
+        
         if (queue.Count == currentLick.Count)
         {
-            Debug.Log("called");
             if (!queueLocked)
             {
                 StartCoroutine(PlayLick());
