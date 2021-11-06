@@ -10,7 +10,6 @@ public class Menu : MonoBehaviour
 
     private void Start()
     {
-        gameObject.SetActive(false);
         volumeSlider = GetComponentInChildren<Slider>();
         if (!PlayerPrefs.HasKey("musicVolume"))
         {

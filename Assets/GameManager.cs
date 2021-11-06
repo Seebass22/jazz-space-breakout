@@ -20,6 +20,22 @@ public class GameManager : MonoBehaviour
     public void Update()
     {
         if (Input.GetKeyUp(KeyCode.Escape))
+        {
             menu.SetActive(!menu.activeSelf);
+            if (menu.activeSelf)
+                PauseGame();
+            else
+                ResumeGame();
+        }
+    }
+
+    public void PauseGame()
+    {
+        Time.timeScale = 0;
+    }
+
+    public void ResumeGame()
+    {
+        Time.timeScale = 1;
     }
 }
