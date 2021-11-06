@@ -27,7 +27,6 @@ public class Ball : MonoBehaviour
         if (other.collider.GetComponent<Paddle>())
         {
             float paddleWidth = other.collider.bounds.size.x;
-            Debug.Log("paddle");
             float x=HitFactor(paddleWidth);
     
             Vector2 dir = new Vector2(x, 1).normalized;
