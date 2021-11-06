@@ -361,6 +361,10 @@ MonoBehaviour:
   - {fileID: 8300000, guid: c8041d416b55a3d4a9063e0f358a959c, type: 3}
   - {fileID: 8300000, guid: 1be9829a06bb43740a37a11b593008b1, type: 3}
   - {fileID: 8300000, guid: 88217baa1b1ed0540913247bc2e4b557, type: 3}
+  lick5:
+  - {fileID: 8300000, guid: 2d527dd32d1baa345ab3451d25259259, type: 3}
+  - {fileID: 8300000, guid: d298dea7da6ff6941abee8a111a506cd, type: 3}
+  - {fileID: 8300000, guid: 9a3597d6c71a9614dbe91e04faf49150, type: 3}
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0

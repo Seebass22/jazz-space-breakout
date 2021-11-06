@@ -16,6 +16,7 @@ public class BrickQueue : MonoBehaviour
     [SerializeField] List<AudioClip> lick2;
     [SerializeField] List<AudioClip> lick3;
     [SerializeField] List<AudioClip> lick4;
+    [SerializeField] List<AudioClip> lick5;
 
     int index = 0;
 
@@ -31,7 +32,8 @@ public class BrickQueue : MonoBehaviour
         licks.Add(lick2);
         licks.Add(lick3);
         licks.Add(lick4);
-        currentLick = lick4;
+        licks.Add(lick5);
+        currentLick = lick5;
     }
 
     void OnDisable()
