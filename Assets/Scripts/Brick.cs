@@ -7,6 +7,7 @@ using UnityEngine.Events;
 public class Brick : MonoBehaviour
 {
     Renderer rend;
+    public UnityEvent<Brick> brickHit;
     void Start()
     {
         rend = GetComponent<Renderer>();
@@ -21,6 +22,7 @@ public class Brick : MonoBehaviour
     {
         if (other.collider.GetComponent<Ball>())
         {
+            this.markBrick();
             brickHit.Invoke(this);
         }
     }
