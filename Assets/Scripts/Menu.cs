@@ -38,7 +38,7 @@ public class Menu : MonoBehaviour
     {
         Debug.Log("Play");
         Time.timeScale = 1;
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("SebScene");
     }
 
     public void QuitGame()

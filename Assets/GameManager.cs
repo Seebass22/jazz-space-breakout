@@ -12,11 +12,6 @@ public class GameManager : MonoBehaviour
         Instantiate(ball);
     }
 
-    public void Start()
-    {
-        menu?.SetActive(false);
-    }
-
     public void Update()
     {
         if (Input.GetKeyUp(KeyCode.Escape))
