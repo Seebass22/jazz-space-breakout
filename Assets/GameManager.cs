@@ -1,17 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Cinemachine;
 
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public GameObject ball;
+    public CinemachineVirtualCamera ballFollowingCamera;
     [SerializeField] private GameObject menu;
+
+    private void Start()
+    {
+        this.ballFollowingCamera = GameObject.FindObjectOfType<CinemachineVirtualCamera>();
+    }
 
     public void SpawnBall()
     {
-        Instantiate(ball);
+        ballFollowingCamera.Follow = Instantiate(ball).transform;
     }
 
     public void Update()
