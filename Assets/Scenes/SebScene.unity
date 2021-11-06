@@ -575,6 +575,63 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+--- !u!1001 &2156701992040648214
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2156701992010309337, guid: 2cbda455d4516a94d86b8c1e2603021f, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2156701992010309337, guid: 2cbda455d4516a94d86b8c1e2603021f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.4159455
+      objectReference: {fileID: 0}
+    - target: {fileID: 2156701992010309337, guid: 2cbda455d4516a94d86b8c1e2603021f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.6874986
+      objectReference: {fileID: 0}
+    - target: {fileID: 2156701992010309337, guid: 2cbda455d4516a94d86b8c1e2603021f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2156701992010309337, guid: 2cbda455d4516a94d86b8c1e2603021f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2156701992010309337, guid: 2cbda455d4516a94d86b8c1e2603021f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2156701992010309337, guid: 2cbda455d4516a94d86b8c1e2603021f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2156701992010309337, guid: 2cbda455d4516a94d86b8c1e2603021f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2156701992010309337, guid: 2cbda455d4516a94d86b8c1e2603021f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2156701992010309337, guid: 2cbda455d4516a94d86b8c1e2603021f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2156701992010309337, guid: 2cbda455d4516a94d86b8c1e2603021f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2156701992010309339, guid: 2cbda455d4516a94d86b8c1e2603021f, type: 3}
+      propertyPath: m_Name
+      value: MeteorShower
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2cbda455d4516a94d86b8c1e2603021f, type: 3}
 --- !u!1001 &4746387453119455754
 PrefabInstance:
   m_ObjectHideFlags: 0
