@@ -8,7 +8,6 @@ public class Ball : MonoBehaviour
     float speed = 6f;
     Transform paddleTransform;
     Rigidbody2D rb;
-    List<Brick> queue = new List<Brick>();
 
     void Start()
     {
@@ -24,6 +23,7 @@ public class Ball : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D other)
     {
+        
         if (other.collider.GetComponent<Paddle>())
         {
             float paddleWidth = other.collider.bounds.size.x;
@@ -33,19 +33,6 @@ public class Ball : MonoBehaviour
             Vector2 dir = new Vector2(x, 1).normalized;
     
             rb.velocity = dir * speed;
-        }
-
-        if (other.collider.GetComponent<Brick>())
-        {
-            queue.Add(other.collider.GetComponent<Brick>());
-            if (queue.Count == 3)
-            {
-                foreach (var brick in queue)
-                {
-                    Destroy(brick.gameObject);
-                }
-                queue.Clear();
-            }
         }
     }
 }
