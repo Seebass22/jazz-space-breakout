@@ -5,7 +5,6 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public GameObject ball;
-    public Timeline timelineManager;
 
     public void SpawnBall()
     {
