@@ -18,7 +18,8 @@ public class GameManager : MonoBehaviour
 
     public void SpawnBall()
     {
-        ballFollowingCamera.Follow = Instantiate(ball).transform;
+        GameObject newBall = Instantiate(ball);
+        ballFollowingCamera.m_Follow = newBall.transform;
     }
 
     public void Update()
