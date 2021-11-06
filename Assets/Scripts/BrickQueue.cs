@@ -29,7 +29,10 @@ public class BrickQueue : MonoBehaviour
         {
             foreach (var b in queue)
             {
-                Destroy(b.gameObject);
+                if (b)
+                {
+                    Destroy(b.gameObject);
+                }
             }
             queue.Clear();
         }
