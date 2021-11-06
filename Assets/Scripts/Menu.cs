@@ -37,6 +37,7 @@ public class Menu : MonoBehaviour
 
     public void PlayGame()
     {
+        Debug.Log("Play");
         SceneManager.LoadScene(0);
     }
 
