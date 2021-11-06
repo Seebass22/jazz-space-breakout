@@ -479,6 +479,11 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 2d527dd32d1baa345ab3451d25259259, type: 3}
   - {fileID: 8300000, guid: d298dea7da6ff6941abee8a111a506cd, type: 3}
   - {fileID: 8300000, guid: 9a3597d6c71a9614dbe91e04faf49150, type: 3}
+  lick6:
+  - {fileID: 8300000, guid: 7d1a20f683604b748aeddfb32492e121, type: 3}
+  - {fileID: 8300000, guid: 35435fa2883afa941815a29e6346eb00, type: 3}
+  - {fileID: 8300000, guid: 0ec90bec5e3ee044f8e1ccece3ad915e, type: 3}
+  - {fileID: 8300000, guid: 58ea384301a4c7546a491441119c1283, type: 3}
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -530,7 +535,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.01728034, y: -0.13999653, z: -10}
+  m_LocalPosition: {x: 0.018802404, y: -0.124936104, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
