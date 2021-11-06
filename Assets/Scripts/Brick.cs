@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,8 +6,16 @@ using UnityEngine.Events;
 
 public class Brick : MonoBehaviour
 {
-    public UnityEvent<Brick> brickHit;
+    Renderer rend;
+    void Start()
+    {
+        rend = GetComponent<Renderer>();
+    }
 
+    public void markBrick()
+    {
+        rend.material.SetColor("_Color", Color.red);
+    }
 
     void OnCollisionEnter2D(Collision2D other)
     {

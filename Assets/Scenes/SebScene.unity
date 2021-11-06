@@ -123,37 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &38195888 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5241123764897361272, guid: 4112bca75ffbb9d4393f449eeafc115f, type: 3}
-  m_PrefabInstance: {fileID: 5241123764868382664}
-  m_PrefabAsset: {fileID: 0}
---- !u!61 &38195892
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 38195888}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.009591699, y: 0.6295625}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.4133334, y: 3.4133334}
-    newSize: {x: 5.12, y: 5.12}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 3.2215016, y: 0.47620893}
-  m_EdgeRadius: 0
 --- !u!1 &99185971
 GameObject:
   m_ObjectHideFlags: 0
@@ -247,6 +216,7 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
+  - component: {fileID: 519420030}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -262,6 +232,18 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
+--- !u!114 &519420030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 540787128af8d7949bf606d91ff22e3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -374,18 +356,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1153843333259116503, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1153843333259116503, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1153843333259116503, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
 --- !u!1001 &4746387453119455754
@@ -456,22 +426,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Paddle
       objectReference: {fileID: 0}
-    - target: {fileID: 5241123764897361274, guid: 4112bca75ffbb9d4393f449eeafc115f, type: 3}
-      propertyPath: m_Size.x
-      value: 5.12
-      objectReference: {fileID: 0}
-    - target: {fileID: 5241123764897361274, guid: 4112bca75ffbb9d4393f449eeafc115f, type: 3}
-      propertyPath: m_Size.y
-      value: 5.12
-      objectReference: {fileID: 0}
-    - target: {fileID: 5241123764897361274, guid: 4112bca75ffbb9d4393f449eeafc115f, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 4cf537017a5e3254aa03dc7c8a43c46d, type: 3}
-    - target: {fileID: 5241123764897361274, guid: 4112bca75ffbb9d4393f449eeafc115f, type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5241123764897361275, guid: 4112bca75ffbb9d4393f449eeafc115f, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -516,8 +470,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 5241123764897361276, guid: 4112bca75ffbb9d4393f449eeafc115f, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4112bca75ffbb9d4393f449eeafc115f, type: 3}
 --- !u!1001 &6795994180734801791
 PrefabInstance:
