@@ -5,25 +5,20 @@ using UnityEngine;
 
 public class Ball : MonoBehaviour
 {
-    float ballSpeed = 3f;
+    float speed = 6f;
     Transform paddleTransform;
     Rigidbody2D rb;
+    List<Brick> queue = new List<Brick>();
 
     void Start()
     {
         paddleTransform = FindObjectOfType<Paddle>().GetComponent<Transform>();
         rb = GetComponent<Rigidbody2D>();
-        rb.velocity = new Vector2(-1, -1) * ballSpeed;
+        rb.velocity = new Vector2(-1, -1) * 0.5f * speed;
     }
 
-    void Update()
+    float HitFactor(float paddleWidth)
     {
-        //transform.position += transform.right * Time.deltaTime * ballSpeed;
-    }
-
-    float hitFactor()
-    {
-        float paddleWidth = 10f;
         return (transform.position.x - paddleTransform.position.x) / paddleWidth;
     }
 
@@ -31,8 +26,26 @@ public class Ball : MonoBehaviour
     {
         if (other.collider.GetComponent<Paddle>())
         {
+            float paddleWidth = other.collider.bounds.size.x;
             Debug.Log("paddle");
+            float x=HitFactor(paddleWidth);
+    
+            Vector2 dir = new Vector2(x, 1).normalized;
+    
+            rb.velocity = dir * speed;
         }
-        Debug.Log("collided");
+
+        if (other.collider.GetComponent<Brick>())
+        {
+            queue.Add(other.collider.GetComponent<Brick>());
+            if (queue.Count == 3)
+            {
+                foreach (var brick in queue)
+                {
+                    Destroy(brick.gameObject);
+                }
+                queue.Clear();
+            }
+        }
     }
 }
