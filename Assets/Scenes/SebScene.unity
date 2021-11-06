@@ -939,6 +939,17 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &552892262 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 650669031942222564, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+  m_PrefabInstance: {fileID: 1153843332605962458}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 180ecf9b41d478f468eb3e9083753217, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &711962194
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1121,6 +1132,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5916824871784099480, guid: 9da809112d5951f43ac5ca3886829bfc, type: 3}
   m_PrefabInstance: {fileID: 439839265}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1103852808 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1328682080016427921, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+  m_PrefabInstance: {fileID: 1153843332605962458}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 180ecf9b41d478f468eb3e9083753217, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1243858676
 GameObject:
   m_ObjectHideFlags: 0
@@ -1187,6 +1209,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1626673536 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6849532522716132407, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+  m_PrefabInstance: {fileID: 1153843332605962458}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 180ecf9b41d478f468eb3e9083753217, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1653819515
 GameObject:
   m_ObjectHideFlags: 0
@@ -1198,6 +1231,7 @@ GameObject:
   - component: {fileID: 1653819518}
   - component: {fileID: 1653819517}
   - component: {fileID: 1653819516}
+  - component: {fileID: 1653819519}
   m_Layer: 0
   m_Name: CM vcam1
   m_TagString: Untagged
@@ -1272,6 +1306,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1653819519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1653819515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00b2d199b96b516448144ab30fb26aed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ChannelMask: -1
+  m_Gain: 1
+  m_Use2DDistance: 1
 --- !u!1 &1748091746
 GameObject:
   m_ObjectHideFlags: 3
@@ -1359,6 +1408,17 @@ MonoBehaviour:
   m_MaximumFOV: 60
   m_MinimumOrthoSize: 1
   m_MaximumOrthoSize: 5000
+--- !u!114 &2097277500 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4192000987989309709, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+  m_PrefabInstance: {fileID: 1153843332605962458}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 180ecf9b41d478f468eb3e9083753217, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1153843332605962458
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1366,6 +1426,62 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 115128232896869214, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 115128232896869214, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 115128232896869214, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 552892262}
+    - target: {fileID: 115128232896869214, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 115128232896869214, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: GenerateImpulse
+      objectReference: {fileID: 0}
+    - target: {fileID: 115128232896869214, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Cinemachine.CinemachineImpulseSource, Cinemachine
+      objectReference: {fileID: 0}
+    - target: {fileID: 115128232896869214, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 467211223760793550, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 467211223760793550, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 467211223760793550, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 552892262}
+    - target: {fileID: 467211223760793550, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 467211223760793550, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: GenerateImpulse
+      objectReference: {fileID: 0}
+    - target: {fileID: 467211223760793550, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Cinemachine.CinemachineImpulseSource, Cinemachine
+      objectReference: {fileID: 0}
+    - target: {fileID: 467211223760793550, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 1153843332242997588, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
       propertyPath: m_Name
       value: Bricks
@@ -1414,12 +1530,923 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1715846630630885356, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1715846630630885356, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1715846630630885356, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 552892262}
+    - target: {fileID: 1715846630630885356, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1715846630630885356, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: GenerateImpulse
+      objectReference: {fileID: 0}
+    - target: {fileID: 1715846630630885356, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Cinemachine.CinemachineImpulseSource, Cinemachine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1715846630630885356, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1940714726659107371, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1940714726659107371, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1940714726659107371, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1103852808}
+    - target: {fileID: 1940714726659107371, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1940714726659107371, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: GenerateImpulse
+      objectReference: {fileID: 0}
+    - target: {fileID: 1940714726659107371, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Cinemachine.CinemachineImpulseSource, Cinemachine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1940714726659107371, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2011059257366868010, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2011059257366868010, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2011059257366868010, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 552892262}
+    - target: {fileID: 2011059257366868010, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2011059257366868010, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: GenerateImpulse
+      objectReference: {fileID: 0}
+    - target: {fileID: 2011059257366868010, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Cinemachine.CinemachineImpulseSource, Cinemachine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2011059257366868010, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2598323445620194787, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2598323445620194787, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2598323445620194787, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 552892262}
+    - target: {fileID: 2598323445620194787, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2598323445620194787, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: GenerateImpulse
+      objectReference: {fileID: 0}
+    - target: {fileID: 2598323445620194787, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Cinemachine.CinemachineImpulseSource, Cinemachine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2598323445620194787, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2768506921802210968, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2768506921802210968, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2768506921802210968, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 552892262}
+    - target: {fileID: 2768506921802210968, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2768506921802210968, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: GenerateImpulse
+      objectReference: {fileID: 0}
+    - target: {fileID: 2768506921802210968, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Cinemachine.CinemachineImpulseSource, Cinemachine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2768506921802210968, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3115038831689765044, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3115038831689765044, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3115038831689765044, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 552892262}
+    - target: {fileID: 3115038831689765044, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3115038831689765044, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: GenerateImpulse
+      objectReference: {fileID: 0}
+    - target: {fileID: 3115038831689765044, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Cinemachine.CinemachineImpulseSource, Cinemachine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3115038831689765044, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3276442123184363777, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3276442123184363777, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3276442123184363777, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 552892262}
+    - target: {fileID: 3276442123184363777, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3276442123184363777, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: GenerateImpulse
+      objectReference: {fileID: 0}
+    - target: {fileID: 3276442123184363777, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Cinemachine.CinemachineImpulseSource, Cinemachine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3276442123184363777, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351217789142869365, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351217789142869365, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351217789142869365, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 552892262}
+    - target: {fileID: 3351217789142869365, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351217789142869365, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: GenerateImpulse
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351217789142869365, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Cinemachine.CinemachineImpulseSource, Cinemachine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351217789142869365, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3609305094606602487, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3609305094606602487, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3609305094606602487, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 552892262}
+    - target: {fileID: 3609305094606602487, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3609305094606602487, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: GenerateImpulse
+      objectReference: {fileID: 0}
+    - target: {fileID: 3609305094606602487, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Cinemachine.CinemachineImpulseSource, Cinemachine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3609305094606602487, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3615663787475760516, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3615663787475760516, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3615663787475760516, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 552892262}
+    - target: {fileID: 3615663787475760516, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3615663787475760516, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: GenerateImpulse
+      objectReference: {fileID: 0}
+    - target: {fileID: 3615663787475760516, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Cinemachine.CinemachineImpulseSource, Cinemachine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3615663787475760516, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3618131772761961612, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3618131772761961612, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3618131772761961612, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 552892262}
+    - target: {fileID: 3618131772761961612, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3618131772761961612, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: GenerateImpulse
+      objectReference: {fileID: 0}
+    - target: {fileID: 3618131772761961612, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Cinemachine.CinemachineImpulseSource, Cinemachine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3618131772761961612, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3653081466480146615, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3653081466480146615, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3653081466480146615, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 2097277500}
+    - target: {fileID: 3653081466480146615, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3653081466480146615, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: GenerateImpulse
+      objectReference: {fileID: 0}
+    - target: {fileID: 3653081466480146615, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Cinemachine.CinemachineImpulseSource, Cinemachine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3653081466480146615, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3695149725257118337, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3695149725257118337, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3695149725257118337, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 552892262}
+    - target: {fileID: 3695149725257118337, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3695149725257118337, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: GenerateImpulse
+      objectReference: {fileID: 0}
+    - target: {fileID: 3695149725257118337, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Cinemachine.CinemachineImpulseSource, Cinemachine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3695149725257118337, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3720563138341124913, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3720563138341124913, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3720563138341124913, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 552892262}
+    - target: {fileID: 3720563138341124913, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3720563138341124913, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: GenerateImpulse
+      objectReference: {fileID: 0}
+    - target: {fileID: 3720563138341124913, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Cinemachine.CinemachineImpulseSource, Cinemachine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3720563138341124913, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3887474582555961351, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3887474582555961351, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3887474582555961351, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 552892262}
+    - target: {fileID: 3887474582555961351, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3887474582555961351, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: GenerateImpulse
+      objectReference: {fileID: 0}
+    - target: {fileID: 3887474582555961351, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Cinemachine.CinemachineImpulseSource, Cinemachine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3887474582555961351, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4177608271279231130, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4177608271279231130, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4177608271279231130, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 552892262}
+    - target: {fileID: 4177608271279231130, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4177608271279231130, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: GenerateImpulse
+      objectReference: {fileID: 0}
+    - target: {fileID: 4177608271279231130, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Cinemachine.CinemachineImpulseSource, Cinemachine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4177608271279231130, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4266160019765045854, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4266160019765045854, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4266160019765045854, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 552892262}
+    - target: {fileID: 4266160019765045854, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4266160019765045854, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: GenerateImpulse
+      objectReference: {fileID: 0}
+    - target: {fileID: 4266160019765045854, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Cinemachine.CinemachineImpulseSource, Cinemachine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4266160019765045854, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4538868753867306750, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: collision.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4538868753867306750, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: collision.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4538868753867306750, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: collision.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1626673536}
+    - target: {fileID: 4538868753867306750, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: collision.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Cinemachine.CinemachineImpulseSource, Cinemachine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4538868753867306750, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: collision.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4538868753867306750, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: collision.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4890922071139742828, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4890922071139742828, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4890922071139742828, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 552892262}
+    - target: {fileID: 4890922071139742828, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4890922071139742828, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: GenerateImpulse
+      objectReference: {fileID: 0}
+    - target: {fileID: 4890922071139742828, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Cinemachine.CinemachineImpulseSource, Cinemachine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4890922071139742828, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5121482313484128915, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5121482313484128915, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5121482313484128915, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 552892262}
+    - target: {fileID: 5121482313484128915, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5121482313484128915, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: GenerateImpulse
+      objectReference: {fileID: 0}
+    - target: {fileID: 5121482313484128915, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Cinemachine.CinemachineImpulseSource, Cinemachine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5121482313484128915, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376085518702937025, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376085518702937025, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376085518702937025, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 552892262}
+    - target: {fileID: 5376085518702937025, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376085518702937025, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: GenerateImpulse
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376085518702937025, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Cinemachine.CinemachineImpulseSource, Cinemachine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376085518702937025, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6148341691606438310, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6148341691606438310, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6148341691606438310, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 552892262}
+    - target: {fileID: 6148341691606438310, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6148341691606438310, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: GenerateImpulse
+      objectReference: {fileID: 0}
+    - target: {fileID: 6148341691606438310, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Cinemachine.CinemachineImpulseSource, Cinemachine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6148341691606438310, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6309768499033421197, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6309768499033421197, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6309768499033421197, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 552892262}
+    - target: {fileID: 6309768499033421197, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1626673536}
+    - target: {fileID: 6309768499033421197, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6309768499033421197, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: GenerateImpulse
+      objectReference: {fileID: 0}
+    - target: {fileID: 6309768499033421197, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: GenerateImpulse
+      objectReference: {fileID: 0}
+    - target: {fileID: 6309768499033421197, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: Cinemachine.CinemachineImpulseSource, Cinemachine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6309768499033421197, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6309768499033421197, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6493122624727544396, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6493122624727544396, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6493122624727544396, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 552892262}
+    - target: {fileID: 6493122624727544396, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6493122624727544396, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: GenerateImpulse
+      objectReference: {fileID: 0}
+    - target: {fileID: 6493122624727544396, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Cinemachine.CinemachineImpulseSource, Cinemachine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6493122624727544396, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6702650977424689071, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6702650977424689071, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6702650977424689071, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 552892262}
+    - target: {fileID: 6702650977424689071, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6702650977424689071, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: GenerateImpulse
+      objectReference: {fileID: 0}
+    - target: {fileID: 6702650977424689071, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Cinemachine.CinemachineImpulseSource, Cinemachine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6702650977424689071, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6849532522716132407, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: m_ImpulseDefinition.m_AmplitudeGain
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6849532522716132407, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: m_ImpulseDefinition.m_FrequencyGain
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6849532522716132407, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: m_ImpulseDefinition.m_TimeEnvelope.m_SustainTime
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6984053212788420923, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6984053212788420923, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6984053212788420923, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 552892262}
+    - target: {fileID: 6984053212788420923, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6984053212788420923, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: GenerateImpulse
+      objectReference: {fileID: 0}
+    - target: {fileID: 6984053212788420923, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Cinemachine.CinemachineImpulseSource, Cinemachine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6984053212788420923, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7427667690823472109, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7427667690823472109, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7427667690823472109, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 552892262}
+    - target: {fileID: 7427667690823472109, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7427667690823472109, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: GenerateImpulse
+      objectReference: {fileID: 0}
+    - target: {fileID: 7427667690823472109, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Cinemachine.CinemachineImpulseSource, Cinemachine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7427667690823472109, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8188455676530825334, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8188455676530825334, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8188455676530825334, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 552892262}
+    - target: {fileID: 8188455676530825334, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8188455676530825334, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: GenerateImpulse
+      objectReference: {fileID: 0}
+    - target: {fileID: 8188455676530825334, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Cinemachine.CinemachineImpulseSource, Cinemachine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8188455676530825334, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8324981682399268535, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8324981682399268535, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8324981682399268535, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 552892262}
+    - target: {fileID: 8324981682399268535, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8324981682399268535, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: GenerateImpulse
+      objectReference: {fileID: 0}
+    - target: {fileID: 8324981682399268535, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Cinemachine.CinemachineImpulseSource, Cinemachine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8324981682399268535, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854093870790351964, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854093870790351964, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854093870790351964, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 552892262}
+    - target: {fileID: 8854093870790351964, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1153843332605962460}
+    - target: {fileID: 8854093870790351964, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854093870790351964, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: GenerateImpulse
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854093870790351964, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: GenerateImpulse
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854093870790351964, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: Cinemachine.CinemachineImpulseSource, Cinemachine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854093870790351964, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854093870790351964, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8952479670342030835, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
       propertyPath: allBricksCleared.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 439839266}
+    - target: {fileID: 9064389172156944821, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9064389172156944821, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9064389172156944821, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 552892262}
+    - target: {fileID: 9064389172156944821, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9064389172156944821, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: GenerateImpulse
+      objectReference: {fileID: 0}
+    - target: {fileID: 9064389172156944821, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Cinemachine.CinemachineImpulseSource, Cinemachine
+      objectReference: {fileID: 0}
+    - target: {fileID: 9064389172156944821, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+      propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+--- !u!114 &1153843332605962460 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8250225064159534566, guid: 1078cd6009528cf46a3e3ad36e8824d8, type: 3}
+  m_PrefabInstance: {fileID: 1153843332605962458}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 180ecf9b41d478f468eb3e9083753217, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2156701992040648214
 PrefabInstance:
   m_ObjectHideFlags: 0

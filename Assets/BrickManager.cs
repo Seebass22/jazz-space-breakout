@@ -23,7 +23,7 @@ public class BrickManager : MonoBehaviour
     {
         foreach (var brick in taggedBricks)
         {
-            Destroy(brick.gameObject);
+            // Destroy(brick.gameObject); // there are conflicting brick managers - they shouldn't be destroyed here too
         }
         taggedBricks.Clear();
         if (!this.gameObject.GetComponentInChildren<Brick>())
