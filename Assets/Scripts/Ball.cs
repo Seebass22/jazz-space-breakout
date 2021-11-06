@@ -34,18 +34,5 @@ public class Ball : MonoBehaviour
     
             rb.velocity = dir * speed;
         }
-
-        if (other.collider.GetComponent<Brick>())
-        {
-            queue.Add(other.collider.GetComponent<Brick>());
-            if (queue.Count == 3)
-            {
-                foreach (var brick in queue)
-                {
-                    Destroy(brick.gameObject);
-                }
-                queue.Clear();
-            }
-        }
     }
 }

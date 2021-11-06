@@ -1,18 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Brick : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public UnityEvent<Brick> brickHit;
 
-    // Update is called once per frame
-    void Update()
+
+    void OnCollisionEnter2D(Collision2D other)
     {
-        
+        if (other.collider.GetComponent<Ball>())
+        {
+            brickHit.Invoke(this);
+        }
     }
 }

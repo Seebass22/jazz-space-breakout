@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7702080134324581511}
   - component: {fileID: 7702080134324581510}
   - component: {fileID: 993187596}
+  - component: {fileID: 7596868960042456191}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Untagged
@@ -72,7 +73,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 244ab4a56d6027d41bbf71d277760d93, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -122,3 +123,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf5ad83e49c60a34b8cd32c5ffb25441, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brickHit:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &7596868960042456191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7702080134324581505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63cc26d9b5da39240b96f6bc68f5f15d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collision:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: BrickManager, Assembly-CSharp
+        m_MethodName: HitBlock
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 993187596}
+          m_ObjectArgumentAssemblyTypeName: Brick, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  tagForEmit: Ball
