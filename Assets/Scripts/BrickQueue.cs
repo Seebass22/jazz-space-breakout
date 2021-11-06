@@ -10,6 +10,7 @@ public class BrickQueue : MonoBehaviour
     List<Brick> queue = new List<Brick>();
     bool queueLocked = false;
     AudioSource source;
+    int blocksLeft = 32;
 
     [SerializeField] List<AudioClip> lick1;
     [SerializeField] List<AudioClip> lick2;
@@ -49,7 +50,7 @@ public class BrickQueue : MonoBehaviour
             brick.markBrick();
         }
         
-        if (queue.Count == currentLick.Count)
+        if (queue.Count == currentLick.Count || blocksLeft < currentLick.Count)
         {
             if (!queueLocked)
             {
@@ -71,9 +72,12 @@ public class BrickQueue : MonoBehaviour
                 source.Play();
                 yield return new WaitWhile(() => source.isPlaying);
                 index += 1;
+                blocksLeft -= 1;
             }
         }
-        queue.RemoveRange(0, currentLick.Count);
+
+        queue.Clear();
+        
         var random = new Random();
         int ind = random.Next(licks.Count);
         currentLick = licks[ind];
