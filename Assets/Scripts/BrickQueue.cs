@@ -13,6 +13,7 @@ public class BrickQueue : MonoBehaviour
 
     [SerializeField] List<AudioClip> lick1;
     [SerializeField] List<AudioClip> lick2;
+    [SerializeField] List<AudioClip> lick3;
 
     int index = 0;
 
@@ -26,7 +27,8 @@ public class BrickQueue : MonoBehaviour
         licks = new List<List<AudioClip>>();
         licks.Add(lick1);
         licks.Add(lick2);
-        currentLick = lick1;
+        licks.Add(lick3);
+        currentLick = lick3;
     }
 
     void OnDisable()
@@ -70,7 +72,9 @@ public class BrickQueue : MonoBehaviour
             }
         }
         queue.RemoveRange(0, currentLick.Count);
-        currentLick = licks[1];
+        var random = new Random();
+        int ind = random.Next(licks.Count);
+        currentLick = licks[ind];
         queueLocked = false;
     }
 }

@@ -351,6 +351,11 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 8f7175e76a0f5424f9b2330f05a538f5, type: 3}
   - {fileID: 8300000, guid: 5c704cbac4ddc9e4aa8171e83f3059d3, type: 3}
   - {fileID: 8300000, guid: 1ccb172361bd06546961c510ec8d3938, type: 3}
+  lick3:
+  - {fileID: 8300000, guid: f29facb6b4e16c942a4e02011dc896b9, type: 3}
+  - {fileID: 8300000, guid: 51a0bfc4506961e448ed4cb34172c0fe, type: 3}
+  - {fileID: 8300000, guid: 19d1ebaae51159545aa058028c446e86, type: 3}
+  - {fileID: 8300000, guid: f5c6dd1b101621f4ca9ce1bf50675737, type: 3}
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
