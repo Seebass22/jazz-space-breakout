@@ -4,28 +4,39 @@ using UnityEngine;
 
 public class InGameMenu : MonoBehaviour
 {
+    private GameObject winRef;
+    private GameObject loseRef;
+    private GameObject titleRef;
+    private GameObject allRef;
+    private void Awake()
+    {
+        winRef = this.transform.Find("GFX/WinImg").gameObject;
+        loseRef = this.transform.Find("GFX/LoseImg").gameObject;
+        titleRef = this.transform.Find("GFX/Title").gameObject;
+        allRef = this.transform.Find("GFX").gameObject;
+    }
     private void ResetMenu()
     {
-        this.transform.Find("GFX/WinImg").gameObject.SetActive(false);
-        this.transform.Find("GFX/LoseImg").gameObject.SetActive(false);
-        this.transform.Find("GFX/Title").gameObject.SetActive(true);
+        winRef.SetActive(false);
+        loseRef.SetActive(false);
+        titleRef.SetActive(true);
     }
     public void ShowMenu()
     {
         Time.timeScale = 0; // there is the main game menu that does the same thing, but whatever, it's just quicker to copy here
         this.ResetMenu();
-        this.transform.Find("GFX").gameObject.SetActive(true);
+        allRef.SetActive(true);
     }
     public void HideMenu()
     {
         Time.timeScale = 1;
-        this.transform.Find("GFX").gameObject.SetActive(false);
+        allRef.gameObject.SetActive(false);
     }
     public void GameEnd(bool didWin)
     {
-        this.transform.Find("GFX/Title").gameObject.SetActive(false);
-        this.transform.Find("GFX/WinImg").gameObject.SetActive(didWin);
-        this.transform.Find("GFX/LoseImg").gameObject.SetActive(!didWin);
         ShowMenu();
+        titleRef.SetActive(false);
+        winRef.SetActive(didWin);
+        loseRef.SetActive(!didWin);
     }
 }
