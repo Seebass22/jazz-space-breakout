@@ -7,6 +7,7 @@ using Random = System.Random;
 public class BrickQueue : MonoBehaviour
 {
     public static Action<Brick> onBrickHit;
+    public static Action onAllBricksDestroyed;
     List<Brick> queue = new List<Brick>();
     bool queueLocked = false;
     AudioSource source;
@@ -86,5 +87,7 @@ public class BrickQueue : MonoBehaviour
         int ind = random.Next(licks.Count);
         currentLick = licks[ind];
         queueLocked = false;
+        if (blocksLeft == 0)
+            onAllBricksDestroyed?.Invoke();
     }
 }

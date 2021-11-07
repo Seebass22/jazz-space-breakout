@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,6 +9,22 @@ public class InGameMenu : MonoBehaviour
     private GameObject loseRef;
     private GameObject titleRef;
     private GameObject allRef;
+
+    void OnEnable()
+    {
+        BrickQueue.onAllBricksDestroyed += win;
+    }
+    
+    void OnDisable()
+    {
+        BrickQueue.onAllBricksDestroyed -= win;
+    }
+
+    void win()
+    {
+        GameEnd(true);
+    }
+
     private void Awake()
     {
         winRef = this.transform.Find("GFX/WinImg").gameObject;
