@@ -90,6 +90,11 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+  brickGroupCleared:
+    m_PersistentCalls:
+      m_Calls: []
+  bricksRequiredForLick: 4
+  currentBrickHitCount: 0
 --- !u!1001 &153223308754627260
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -120,10 +125,6 @@ PrefabInstance:
     - target: {fileID: 993187596, guid: 02119ebe13010cd4488408246a31490d, type: 3}
       propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 621110326764377782, guid: 02119ebe13010cd4488408246a31490d, type: 3}
-      propertyPath: m_ImpulseDefinition.m_AmplitudeGain
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7702080134324581505, guid: 02119ebe13010cd4488408246a31490d, type: 3}
       propertyPath: m_Name
@@ -211,10 +212,6 @@ PrefabInstance:
       propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    - target: {fileID: 621110326764377782, guid: 02119ebe13010cd4488408246a31490d, type: 3}
-      propertyPath: m_ImpulseDefinition.m_AmplitudeGain
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 7702080134324581505, guid: 02119ebe13010cd4488408246a31490d, type: 3}
       propertyPath: m_Name
       value: Brick (11)
@@ -300,10 +297,6 @@ PrefabInstance:
     - target: {fileID: 993187596, guid: 02119ebe13010cd4488408246a31490d, type: 3}
       propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 621110326764377782, guid: 02119ebe13010cd4488408246a31490d, type: 3}
-      propertyPath: m_ImpulseDefinition.m_AmplitudeGain
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7702080134324581505, guid: 02119ebe13010cd4488408246a31490d, type: 3}
       propertyPath: m_Name
@@ -391,10 +384,6 @@ PrefabInstance:
       propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    - target: {fileID: 621110326764377782, guid: 02119ebe13010cd4488408246a31490d, type: 3}
-      propertyPath: m_ImpulseDefinition.m_AmplitudeGain
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 7702080134324581505, guid: 02119ebe13010cd4488408246a31490d, type: 3}
       propertyPath: m_Name
       value: Brick (3)
@@ -480,10 +469,6 @@ PrefabInstance:
     - target: {fileID: 993187596, guid: 02119ebe13010cd4488408246a31490d, type: 3}
       propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 621110326764377782, guid: 02119ebe13010cd4488408246a31490d, type: 3}
-      propertyPath: m_ImpulseDefinition.m_AmplitudeGain
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7702080134324581505, guid: 02119ebe13010cd4488408246a31490d, type: 3}
       propertyPath: m_Name
@@ -571,10 +556,6 @@ PrefabInstance:
       propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    - target: {fileID: 621110326764377782, guid: 02119ebe13010cd4488408246a31490d, type: 3}
-      propertyPath: m_ImpulseDefinition.m_AmplitudeGain
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 7702080134324581505, guid: 02119ebe13010cd4488408246a31490d, type: 3}
       propertyPath: m_Name
       value: Brick (6)
@@ -660,10 +641,6 @@ PrefabInstance:
     - target: {fileID: 993187596, guid: 02119ebe13010cd4488408246a31490d, type: 3}
       propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 621110326764377782, guid: 02119ebe13010cd4488408246a31490d, type: 3}
-      propertyPath: m_ImpulseDefinition.m_AmplitudeGain
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7702080134324581505, guid: 02119ebe13010cd4488408246a31490d, type: 3}
       propertyPath: m_Name
@@ -751,10 +728,6 @@ PrefabInstance:
       propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    - target: {fileID: 621110326764377782, guid: 02119ebe13010cd4488408246a31490d, type: 3}
-      propertyPath: m_ImpulseDefinition.m_AmplitudeGain
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 7702080134324581505, guid: 02119ebe13010cd4488408246a31490d, type: 3}
       propertyPath: m_Name
       value: Brick (2)
@@ -840,10 +813,6 @@ PrefabInstance:
     - target: {fileID: 993187596, guid: 02119ebe13010cd4488408246a31490d, type: 3}
       propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 621110326764377782, guid: 02119ebe13010cd4488408246a31490d, type: 3}
-      propertyPath: m_ImpulseDefinition.m_AmplitudeGain
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7702080134324581505, guid: 02119ebe13010cd4488408246a31490d, type: 3}
       propertyPath: m_Name
@@ -931,10 +900,6 @@ PrefabInstance:
       propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    - target: {fileID: 621110326764377782, guid: 02119ebe13010cd4488408246a31490d, type: 3}
-      propertyPath: m_ImpulseDefinition.m_AmplitudeGain
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 7702080134324581505, guid: 02119ebe13010cd4488408246a31490d, type: 3}
       propertyPath: m_Name
       value: Brick (26)
@@ -1020,10 +985,6 @@ PrefabInstance:
     - target: {fileID: 993187596, guid: 02119ebe13010cd4488408246a31490d, type: 3}
       propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 621110326764377782, guid: 02119ebe13010cd4488408246a31490d, type: 3}
-      propertyPath: m_ImpulseDefinition.m_AmplitudeGain
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7702080134324581505, guid: 02119ebe13010cd4488408246a31490d, type: 3}
       propertyPath: m_Name
@@ -1111,10 +1072,6 @@ PrefabInstance:
       propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    - target: {fileID: 621110326764377782, guid: 02119ebe13010cd4488408246a31490d, type: 3}
-      propertyPath: m_ImpulseDefinition.m_AmplitudeGain
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 7702080134324581505, guid: 02119ebe13010cd4488408246a31490d, type: 3}
       propertyPath: m_Name
       value: Brick (31)
@@ -1200,10 +1157,6 @@ PrefabInstance:
     - target: {fileID: 993187596, guid: 02119ebe13010cd4488408246a31490d, type: 3}
       propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 621110326764377782, guid: 02119ebe13010cd4488408246a31490d, type: 3}
-      propertyPath: m_ImpulseDefinition.m_AmplitudeGain
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7702080134324581505, guid: 02119ebe13010cd4488408246a31490d, type: 3}
       propertyPath: m_Name
@@ -1291,10 +1244,6 @@ PrefabInstance:
       propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    - target: {fileID: 621110326764377782, guid: 02119ebe13010cd4488408246a31490d, type: 3}
-      propertyPath: m_ImpulseDefinition.m_AmplitudeGain
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 7702080134324581505, guid: 02119ebe13010cd4488408246a31490d, type: 3}
       propertyPath: m_Name
       value: Brick (15)
@@ -1380,10 +1329,6 @@ PrefabInstance:
     - target: {fileID: 993187596, guid: 02119ebe13010cd4488408246a31490d, type: 3}
       propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 621110326764377782, guid: 02119ebe13010cd4488408246a31490d, type: 3}
-      propertyPath: m_ImpulseDefinition.m_AmplitudeGain
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7702080134324581505, guid: 02119ebe13010cd4488408246a31490d, type: 3}
       propertyPath: m_Name
@@ -1471,10 +1416,6 @@ PrefabInstance:
       propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    - target: {fileID: 621110326764377782, guid: 02119ebe13010cd4488408246a31490d, type: 3}
-      propertyPath: m_ImpulseDefinition.m_AmplitudeGain
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 7702080134324581505, guid: 02119ebe13010cd4488408246a31490d, type: 3}
       propertyPath: m_Name
       value: Brick (10)
@@ -1560,10 +1501,6 @@ PrefabInstance:
     - target: {fileID: 993187596, guid: 02119ebe13010cd4488408246a31490d, type: 3}
       propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 621110326764377782, guid: 02119ebe13010cd4488408246a31490d, type: 3}
-      propertyPath: m_ImpulseDefinition.m_AmplitudeGain
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7702080134324581505, guid: 02119ebe13010cd4488408246a31490d, type: 3}
       propertyPath: m_Name
@@ -1651,10 +1588,6 @@ PrefabInstance:
       propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    - target: {fileID: 621110326764377782, guid: 02119ebe13010cd4488408246a31490d, type: 3}
-      propertyPath: m_ImpulseDefinition.m_AmplitudeGain
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 7702080134324581505, guid: 02119ebe13010cd4488408246a31490d, type: 3}
       propertyPath: m_Name
       value: Brick (22)
@@ -1740,10 +1673,6 @@ PrefabInstance:
     - target: {fileID: 993187596, guid: 02119ebe13010cd4488408246a31490d, type: 3}
       propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 621110326764377782, guid: 02119ebe13010cd4488408246a31490d, type: 3}
-      propertyPath: m_ImpulseDefinition.m_AmplitudeGain
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7702080134324581505, guid: 02119ebe13010cd4488408246a31490d, type: 3}
       propertyPath: m_Name
@@ -1831,10 +1760,6 @@ PrefabInstance:
       propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    - target: {fileID: 621110326764377782, guid: 02119ebe13010cd4488408246a31490d, type: 3}
-      propertyPath: m_ImpulseDefinition.m_AmplitudeGain
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 7702080134324581505, guid: 02119ebe13010cd4488408246a31490d, type: 3}
       propertyPath: m_Name
       value: Brick (29)
@@ -1920,10 +1845,6 @@ PrefabInstance:
     - target: {fileID: 993187596, guid: 02119ebe13010cd4488408246a31490d, type: 3}
       propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 621110326764377782, guid: 02119ebe13010cd4488408246a31490d, type: 3}
-      propertyPath: m_ImpulseDefinition.m_AmplitudeGain
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7702080134324581505, guid: 02119ebe13010cd4488408246a31490d, type: 3}
       propertyPath: m_Name
@@ -2011,10 +1932,6 @@ PrefabInstance:
       propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    - target: {fileID: 621110326764377782, guid: 02119ebe13010cd4488408246a31490d, type: 3}
-      propertyPath: m_ImpulseDefinition.m_AmplitudeGain
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 7702080134324581505, guid: 02119ebe13010cd4488408246a31490d, type: 3}
       propertyPath: m_Name
       value: Brick (13)
@@ -2100,10 +2017,6 @@ PrefabInstance:
     - target: {fileID: 993187596, guid: 02119ebe13010cd4488408246a31490d, type: 3}
       propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 621110326764377782, guid: 02119ebe13010cd4488408246a31490d, type: 3}
-      propertyPath: m_ImpulseDefinition.m_AmplitudeGain
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7702080134324581505, guid: 02119ebe13010cd4488408246a31490d, type: 3}
       propertyPath: m_Name
@@ -2191,10 +2104,6 @@ PrefabInstance:
       propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    - target: {fileID: 621110326764377782, guid: 02119ebe13010cd4488408246a31490d, type: 3}
-      propertyPath: m_ImpulseDefinition.m_AmplitudeGain
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 7702080134324581505, guid: 02119ebe13010cd4488408246a31490d, type: 3}
       propertyPath: m_Name
       value: Brick (27)
@@ -2280,10 +2189,6 @@ PrefabInstance:
     - target: {fileID: 993187596, guid: 02119ebe13010cd4488408246a31490d, type: 3}
       propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 621110326764377782, guid: 02119ebe13010cd4488408246a31490d, type: 3}
-      propertyPath: m_ImpulseDefinition.m_AmplitudeGain
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7702080134324581505, guid: 02119ebe13010cd4488408246a31490d, type: 3}
       propertyPath: m_Name
@@ -2371,10 +2276,6 @@ PrefabInstance:
       propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    - target: {fileID: 621110326764377782, guid: 02119ebe13010cd4488408246a31490d, type: 3}
-      propertyPath: m_ImpulseDefinition.m_AmplitudeGain
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 7702080134324581505, guid: 02119ebe13010cd4488408246a31490d, type: 3}
       propertyPath: m_Name
       value: Brick (25)
@@ -2460,10 +2361,6 @@ PrefabInstance:
     - target: {fileID: 993187596, guid: 02119ebe13010cd4488408246a31490d, type: 3}
       propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 621110326764377782, guid: 02119ebe13010cd4488408246a31490d, type: 3}
-      propertyPath: m_ImpulseDefinition.m_AmplitudeGain
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7702080134324581505, guid: 02119ebe13010cd4488408246a31490d, type: 3}
       propertyPath: m_Name
@@ -2551,10 +2448,6 @@ PrefabInstance:
       propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    - target: {fileID: 621110326764377782, guid: 02119ebe13010cd4488408246a31490d, type: 3}
-      propertyPath: m_ImpulseDefinition.m_AmplitudeGain
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 7702080134324581505, guid: 02119ebe13010cd4488408246a31490d, type: 3}
       propertyPath: m_Name
       value: Brick (18)
@@ -2640,10 +2533,6 @@ PrefabInstance:
     - target: {fileID: 993187596, guid: 02119ebe13010cd4488408246a31490d, type: 3}
       propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 621110326764377782, guid: 02119ebe13010cd4488408246a31490d, type: 3}
-      propertyPath: m_ImpulseDefinition.m_AmplitudeGain
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7702080134324581505, guid: 02119ebe13010cd4488408246a31490d, type: 3}
       propertyPath: m_Name
@@ -2731,10 +2620,6 @@ PrefabInstance:
       propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    - target: {fileID: 621110326764377782, guid: 02119ebe13010cd4488408246a31490d, type: 3}
-      propertyPath: m_ImpulseDefinition.m_AmplitudeGain
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 7702080134324581505, guid: 02119ebe13010cd4488408246a31490d, type: 3}
       propertyPath: m_Name
       value: Brick (16)
@@ -2821,10 +2706,6 @@ PrefabInstance:
       propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    - target: {fileID: 621110326764377782, guid: 02119ebe13010cd4488408246a31490d, type: 3}
-      propertyPath: m_ImpulseDefinition.m_AmplitudeGain
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 7702080134324581505, guid: 02119ebe13010cd4488408246a31490d, type: 3}
       propertyPath: m_Name
       value: Brick (19)
@@ -2910,10 +2791,6 @@ PrefabInstance:
     - target: {fileID: 993187596, guid: 02119ebe13010cd4488408246a31490d, type: 3}
       propertyPath: brickHit.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 621110326764377782, guid: 02119ebe13010cd4488408246a31490d, type: 3}
-      propertyPath: m_ImpulseDefinition.m_AmplitudeGain
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7702080134324581505, guid: 02119ebe13010cd4488408246a31490d, type: 3}
       propertyPath: m_Name
