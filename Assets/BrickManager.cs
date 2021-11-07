@@ -19,7 +19,8 @@ public class BrickManager : MonoBehaviour
 
     public void HitBlock(Brick blockHit)
     {
-        taggedBricks.Add(blockHit);
+        if (!taggedBricks.Contains(blockHit)) taggedBricks.Add(blockHit);
+        
 
         if (taggedBricks.Count >= bricksRequiredForLick)
         {

@@ -8,6 +8,7 @@ public class InGameMenu : MonoBehaviour
     {
         this.transform.Find("GFX/WinImg").gameObject.SetActive(false);
         this.transform.Find("GFX/LoseImg").gameObject.SetActive(false);
+        this.transform.Find("GFX/Title").gameObject.SetActive(true);
     }
 
     public void ShowMenu()
@@ -21,6 +22,7 @@ public class InGameMenu : MonoBehaviour
     }
     public void GameEnd(bool didWin)
     {
+        this.transform.Find("GFX/Title").gameObject.SetActive(false);
         this.transform.Find("GFX/WinImg").gameObject.SetActive(didWin);
         this.transform.Find("GFX/LoseImg").gameObject.SetActive(!didWin);
         ShowMenu();
