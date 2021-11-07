@@ -10,7 +10,10 @@ public class BrickManager : MonoBehaviour
     public UnityEvent allBricksCleared;
     public UnityEvent brickGroupCleared;
     public int bricksRequiredForLick = 4;
+    public int currentBrickHitCount = 0; // NON UNIQUE brick count (the same brick hit multiple times counts toward this)
     private int totalBrickCount;
+
+    private bool requireUniqueBricksToTriggerLick = false; // feature flag. set to true if only unique bricks trigger the lick (can cause issues if a brick is unaccessible)
 
     private void Start()
     {
@@ -20,9 +23,10 @@ public class BrickManager : MonoBehaviour
     public void HitBlock(Brick blockHit)
     {
         if (!taggedBricks.Contains(blockHit)) taggedBricks.Add(blockHit);
-        
 
-        if (taggedBricks.Count >= bricksRequiredForLick)
+        currentBrickHitCount += 1;
+        bool nonUniqueIsSufficient = !requireUniqueBricksToTriggerLick && currentBrickHitCount >= bricksRequiredForLick;
+        if (taggedBricks.Count >= bricksRequiredForLick || nonUniqueIsSufficient)
         {
             this.DrainQueue();
         }
@@ -37,6 +41,7 @@ public class BrickManager : MonoBehaviour
         brickGroupCleared.Invoke();
 
         totalBrickCount -= taggedBricks.Count;
+        currentBrickHitCount = 0;
         taggedBricks.Clear();
         if (totalBrickCount <= 0)
         {
