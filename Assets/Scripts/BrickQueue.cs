@@ -72,7 +72,7 @@ public class BrickQueue : MonoBehaviour
             if (b)
             {
                 source.clip = currentLick[index];
-                b.gameObject.SetActive(false);
+                b.Destruct();
                 source.Play();
                 yield return new WaitWhile(() => source.isPlaying);
                 index += 1;
