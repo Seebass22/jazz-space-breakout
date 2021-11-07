@@ -7,10 +7,8 @@ public class Timeline : MonoBehaviour
 {
     // Licks stuff
     private List<Lick> queuedLicks = new List<Lick>();
-    private int lifetimeBlockHitCount = 0; // just in case we do something special at a certain number of blocks, currently unused
-    private int blockHitCount = 0;
-
-    public Lick activeLick;
+    [SerializeField]
+    private List<Lick> allLicks = new List<Lick>();
 
     // UI stuff
     private TMPro.TextMeshProUGUI uiBeatCount;
@@ -22,8 +20,6 @@ public class Timeline : MonoBehaviour
     public int beatDivisions = 4;
     private float nextUpdate = 0f;
     private float nextBar = 0f;
-
-
 
 
     // Unity methods
@@ -52,46 +48,44 @@ public class Timeline : MonoBehaviour
         }
     }
 
-
-
-
     // Custom methods
     private void UpdateBeatCountDisplay(string beatCount)
     {
         this.uiBeatCount.text = beatCount;
     }
-    private void UpdateBlockHitCountDisplay()
+
+    public void QueueRandomLick()
     {
-        this.uiBlockHitCount.text = this.blockHitCount.ToString();
-    }
-
-
-    public void AddBlockHit()
-    {
-        Debug.Log(string.Format("New block hit, updating to {0}", this.blockHitCount));
-        this.lifetimeBlockHitCount += 1;
-        this.blockHitCount += 1;
-
-        this.AttemptActiveLick();
-
-        this.UpdateBlockHitCountDisplay();
-    }
-
-    // Probably this should be outside of the timeline, but just prototyping now
-    private void AttemptActiveLick()
-    {
-        if (activeLick.sectionCount <= this.blockHitCount)
-        {
-            this.queuedLicks.Add(this.activeLick); // no mechanism to change the active lick as of yet
-            this.blockHitCount = 0;
-        }
+        int randomLickIndex = Random.Range(0, allLicks.Count);
+        this.queuedLicks.Add(allLicks[randomLickIndex]);
     }
 
     private void PlayAndDrainQueuedLicks()
     {
         Debug.Log("Queued licks drained");
-        this.queuedLicks.ForEach(lick => AudioSource.PlayClipAtPoint(lick.lickAudio, new Vector3(0,0,0)));
+        this.queuedLicks.ForEach(lick => StartCoroutine(PlayLick(lick.lickAudioParts)));
 
         this.queuedLicks.Clear();
     }
+
+    IEnumerator PlayLick(List<AudioClip> lickParts)
+    {
+        foreach (var part in lickParts)
+        {
+            AudioSource tempAudio = PlayClipAt(part);
+            yield return new WaitWhile(() => tempAudio && tempAudio.isPlaying);
+        }
+    }
+
+    // create the temp object with an audio source that deletes after it's run
+    // Unity's inbuild PlayClipAtPoint doesn't return its reference, so we need to hack it :/
+    // http://answers.unity.com/answers/533247/view.html
+    AudioSource PlayClipAt(AudioClip clip) {
+        GameObject tempGO = new GameObject("TempAudio");
+        AudioSource audio = tempGO.AddComponent<AudioSource>();
+        audio.clip = clip;
+        audio.Play();
+        Destroy(tempGO, clip.length);
+        return audio;
+     }
 }

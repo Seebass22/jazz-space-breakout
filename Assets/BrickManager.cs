@@ -8,12 +8,20 @@ public class BrickManager : MonoBehaviour
     List<Brick> taggedBricks = new List<Brick>();
 
     public UnityEvent allBricksCleared;
+    public UnityEvent brickGroupCleared;
+    public int bricksRequiredForLick = 4;
+    private int totalBrickCount;
+
+    private void Start()
+    {
+        totalBrickCount = this.gameObject.GetComponentsInChildren<Brick>().Length;
+    }
 
     public void HitBlock(Brick blockHit)
     {
         taggedBricks.Add(blockHit);
 
-        if (taggedBricks.Count >= 3)
+        if (taggedBricks.Count >= bricksRequiredForLick)
         {
             this.DrainQueue();
         }
@@ -23,10 +31,13 @@ public class BrickManager : MonoBehaviour
     {
         foreach (var brick in taggedBricks)
         {
-            // Destroy(brick.gameObject); // there are conflicting brick managers - they shouldn't be destroyed here too
+            Destroy(brick.gameObject);
         }
+        brickGroupCleared.Invoke();
+
+        totalBrickCount -= taggedBricks.Count;
         taggedBricks.Clear();
-        if (!this.gameObject.GetComponentInChildren<Brick>())
+        if (totalBrickCount <= 0)
         {
             allBricksCleared.Invoke();
         }

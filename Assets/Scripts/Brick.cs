@@ -15,7 +15,7 @@ public class Brick : MonoBehaviour
         source = GetComponent<AudioSource>();
     }
 
-    public void markBrick()
+    public void MarkBrick()
     {
         rend.material.SetColor("_Color", Color.red);
     }
@@ -25,8 +25,8 @@ public class Brick : MonoBehaviour
         if (other.collider.GetComponent<Ball>())
         {
             source.Play();
+            MarkBrick();
             brickHit.Invoke(this);
-            BrickQueue.onBrickHit?.Invoke(this);
         }
     }
 }

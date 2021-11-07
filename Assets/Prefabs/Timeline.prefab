@@ -664,9 +664,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fe0f2e2b08792547aca5d65163a3478, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeLick:
-    lickAudio: {fileID: 8300000, guid: 093e7a750c26a5b4d80975f1873ac8cb, type: 3}
-    sectionCount: 3
+  allLicks:
+  - lickAudioParts:
+    - {fileID: 8300000, guid: 1cbde8e90af2e1d4da88fa9d129e00f9, type: 3}
+    - {fileID: 8300000, guid: f4622d06386c68f4889dc192e1e1abe8, type: 3}
+    - {fileID: 8300000, guid: e3f02909fdc1fbb49b68e032748cab62, type: 3}
+    - {fileID: 8300000, guid: 72d2ba21f424d844c9c54a0f600e51ae, type: 3}
+  - lickAudioParts:
+    - {fileID: 8300000, guid: 8f7175e76a0f5424f9b2330f05a538f5, type: 3}
+    - {fileID: 8300000, guid: 5c704cbac4ddc9e4aa8171e83f3059d3, type: 3}
+    - {fileID: 8300000, guid: 1ccb172361bd06546961c510ec8d3938, type: 3}
+  - lickAudioParts:
+    - {fileID: 8300000, guid: f29facb6b4e16c942a4e02011dc896b9, type: 3}
+    - {fileID: 8300000, guid: 51a0bfc4506961e448ed4cb34172c0fe, type: 3}
+    - {fileID: 8300000, guid: 19d1ebaae51159545aa058028c446e86, type: 3}
+    - {fileID: 8300000, guid: f5c6dd1b101621f4ca9ce1bf50675737, type: 3}
+  - lickAudioParts:
+    - {fileID: 8300000, guid: ab0acf98038724f47bc647d482298e3c, type: 3}
+    - {fileID: 8300000, guid: c8041d416b55a3d4a9063e0f358a959c, type: 3}
+    - {fileID: 8300000, guid: 1be9829a06bb43740a37a11b593008b1, type: 3}
+    - {fileID: 8300000, guid: 88217baa1b1ed0540913247bc2e4b557, type: 3}
+  - lickAudioParts:
+    - {fileID: 8300000, guid: 2d527dd32d1baa345ab3451d25259259, type: 3}
+    - {fileID: 8300000, guid: d298dea7da6ff6941abee8a111a506cd, type: 3}
+    - {fileID: 8300000, guid: 9a3597d6c71a9614dbe91e04faf49150, type: 3}
+  - lickAudioParts:
+    - {fileID: 8300000, guid: 7d1a20f683604b748aeddfb32492e121, type: 3}
+    - {fileID: 8300000, guid: 35435fa2883afa941815a29e6346eb00, type: 3}
+    - {fileID: 8300000, guid: 0ec90bec5e3ee044f8e1ccece3ad915e, type: 3}
+    - {fileID: 8300000, guid: 58ea384301a4c7546a491441119c1283, type: 3}
   beatsPerSecond: 1
   beatDivisions: 4
 --- !u!1 &3467780370495124958
