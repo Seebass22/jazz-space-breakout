@@ -38,5 +38,6 @@ public class InGameMenu : MonoBehaviour
         titleRef.SetActive(false);
         winRef.SetActive(didWin);
         loseRef.SetActive(!didWin);
+        GameObject.FindObjectOfType<GameManager>().canSpawnBall = true;
     }
 }

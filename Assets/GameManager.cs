@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public GameObject ball;
     public CinemachineVirtualCamera ballFollowingCamera;
     [SerializeField] private GameObject menu;
+    public bool canSpawnBall = true;
 
     private void Start()
     {
@@ -18,6 +19,10 @@ public class GameManager : MonoBehaviour
 
     public void SpawnBall()
     {
+        if (!canSpawnBall)
+            return;
+        
+        canSpawnBall = false;
         GameObject newBall = Instantiate(ball);
         ballFollowingCamera.m_Follow = newBall.transform;
     }
