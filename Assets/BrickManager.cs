@@ -32,7 +32,7 @@ public class BrickManager : MonoBehaviour
     {
         foreach (var brick in taggedBricks)
         {
-            Destroy(brick.gameObject);
+            brick.Destruct();
         }
         brickGroupCleared.Invoke();
 

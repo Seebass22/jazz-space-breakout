@@ -9,6 +9,7 @@ public class Brick : MonoBehaviour
     AudioSource source;
     Renderer rend;
     public UnityEvent<Brick> brickHit;
+    public GameObject destroyedPrefab;
     void Start()
     {
         rend = GetComponent<Renderer>();
@@ -28,5 +29,11 @@ public class Brick : MonoBehaviour
             MarkBrick();
             brickHit.Invoke(this);
         }
+    }
+
+    public void Destruct()
+    {
+        Instantiate(destroyedPrefab, this.transform.position, this.transform.rotation);
+        Destroy(this.gameObject);
     }
 }
