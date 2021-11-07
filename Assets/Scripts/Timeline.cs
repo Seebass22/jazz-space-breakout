@@ -35,6 +35,7 @@ public class Timeline : MonoBehaviour
     {
         var roundedTime = Mathf.Round(Time.time * 100) / 100;
         this.uiSlider.value = Time.time % 1;
+
         if (roundedTime >= nextUpdate)
         {
             nextUpdate = roundedTime + this.beatsPerSecond;
@@ -44,8 +45,10 @@ public class Timeline : MonoBehaviour
         if (Time.time >= nextBar)
         {
             nextBar = roundedTime + (this.beatsPerSecond * this.beatDivisions);
-            this.PlayAndDrainQueuedLicks();
+            //this.PlayAndDrainQueuedLicks(); // to play the beats in sync, call this here
+            // however, synce beats sounds terrible for some reason, so we just always call it
         }
+        this.PlayAndDrainQueuedLicks();
     }
 
     // Custom methods
@@ -62,7 +65,6 @@ public class Timeline : MonoBehaviour
 
     private void PlayAndDrainQueuedLicks()
     {
-        Debug.Log("Queued licks drained");
         this.queuedLicks.ForEach(lick => StartCoroutine(PlayLick(lick.lickAudioParts)));
 
         this.queuedLicks.Clear();
