@@ -26,8 +26,7 @@ public class Brick : MonoBehaviour
         if (other.collider.GetComponent<Ball>())
         {
             source.Play();
-            MarkBrick();
-            brickHit.Invoke(this);
+            BrickQueue.onBrickHit?.Invoke(this);
         }
     }
 
