@@ -22,6 +22,7 @@ public class BrickManager : MonoBehaviour
 
     public void HitBlock(Brick blockHit)
     {
+        return;
         if (!taggedBricks.Contains(blockHit)) taggedBricks.Add(blockHit);
 
         currentBrickHitCount += 1;
