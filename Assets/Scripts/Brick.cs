@@ -18,7 +18,7 @@ public class Brick : MonoBehaviour
 
     public void MarkBrick()
     {
-        rend.material.SetColor("_Color", Color.red);
+        rend.material.SetColor("_Color", Color.gray);
     }
 
     void OnCollisionEnter2D(Collision2D other)
